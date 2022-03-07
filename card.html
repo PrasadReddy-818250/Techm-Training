@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title> star</title>
+   </head>
+
+
+
+   <body onload="namedate()">
+      <canvas id="newCanvas" width="1100" height="1030" style="border:11px solid pink;"></canvas>
+
+
+      <p id="demo"></p>
+      
+      <script>
+
+function namedate() {
+            var x = prompt("Please enter name");
+            var y=prompt("enter event ");
+            
+            var person=x;
+            
+           
+            ctx.font="75px italic";
+         ctx.fillStyle = "meganta";
+         ctx.textAlign="center";
+         ctx.fillText( person,canvas.width/2, canvas.height/1.45);
+
+         ctx.font="75px italic";
+         ctx.fillStyle = "meganta";
+         ctx.textAlign="center";
+         ctx.fillText( y,canvas.width/2, canvas.height/1.75);
+           
+
+
+           
+
+            }
+
+
+         var canvas = document.getElementById('newCanvas');
+         var ctx = canvas.getContext('2d');
+         ctx.fillStyle ="cyan";
+
+
+         ctx.fillRect(0,0,1920,1080);
+         ctx.fillStyle = "white";
+         ctx.beginPath();
+         ctx.moveTo(540, 0.0);
+         ctx.lineTo(705, 350);
+         ctx.lineTo(1090, 391.5);
+         ctx.lineTo(810, 655);
+         ctx.lineTo(875, 1025);
+         ctx.lineTo(540, 850);
+         ctx.lineTo(206, 1025);
+         ctx.lineTo(275, 655);
+         ctx.lineTo(5, 390);
+         ctx.lineTo(375, 340);
+         ctx.lineTo(540, 0);
+         ctx.closePath();
+         ctx.fill();
+
+         ctx.font="60px cursive";
+         ctx.fillStyle = "red";
+         ctx.textAlign = "center";
+         ctx.fillText("GREETINGS", canvas.width/2, canvas.height/2.5);
+
+
+         ctx.font="30px Comic Sans MS";
+         ctx.fillStyle = "green";
+         ctx.textAlign="center";
+         ctx.fillText("On the occasion of your ", canvas.width/2, canvas.height/2.15);
+
+
+
+
+
+
+
+      </script>
+        
+
+    
+   </body>
+</html>
